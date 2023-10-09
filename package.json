@@ -1,0 +1,30 @@
+{
+  "name": "encriptador",
+  "version": "1.0.0",
+  "description": "Encriptador con Gulp, SASS Y HTML",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass src/scss:build/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lufero2510/Encriptador-Allura.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp",
+    "Encriptador"
+  ],
+  "author": "Luis Fernando García Cano",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lufero2510/Encriptador-Allura/issues"
+  },
+  "homepage": "https://github.com/Lufero2510/Encriptador-Allura#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.62.1"
+  }
+}

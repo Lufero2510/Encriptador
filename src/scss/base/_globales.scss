@@ -1,0 +1,74 @@
+@use 'variables' as v;
+*{
+    font-family: v.$fuente_principal;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+}
+
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+}
+
+body{
+    background-color: v.$grisClaro;
+    font-size: 1.6rem;
+}
+
+.contenedor{
+    max-width: 120rem;
+    width: 90%;
+    margin: 0 auto;
+}
+a{
+text-decoration: none;
+}
+
+h1, h2, h3{
+margin: 0 0 5rem 0;
+}
+
+h1{
+font-size: 4rem;
+}
+h2{
+font-size: 3.6rem;
+}
+h3{
+font-size: 3rem;
+}
+
+img{
+    max-width: 100%;
+}
+textarea{
+    border: none;
+    margin-top: 3rem;
+    padding: .2rem;
+    text-transform: lowercase;
+    font-size: 3.2rem;
+    overflow-y: hidden;
+    color: #0A3871;
+    resize: none;
+    &:focus{
+       outline: none;
+    }
+}
+::placeholder{
+    color: v.$azulOscuro;
+}
+.boton{
+    height: 6.7rem;
+    border-radius: 2.5rem;
+    font-size: 3.2rem;
+    &:hover{
+       cursor: pointer;
+    }
+}

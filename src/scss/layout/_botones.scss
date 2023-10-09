@@ -1,0 +1,40 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.botones{
+    display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        .btn-desencriptar,
+        .btn-encriptar{
+            width: 90%;
+        } 
+
+    @include m.tablet{
+        flex-direction: row;
+        .btn-desencriptar,
+        .btn-encriptar{
+            width: 40%;
+        }
+    }
+}
+
+.btn-encriptar{
+    background-color: v.$azulOscuro;
+    color: v.$blanco;
+}
+.btn-desencriptar{
+    background-color: v.$grisOscuro;
+    color: v.$azulOscuro;
+}
+.btn-copiar{
+    background-color: v.$blanco;
+    color: v.$azulOscuro;
+    width: 80%;
+    
+}
+.copiar{
+    display: flex;
+    margin-top: -9rem;
+    justify-content: center;
+}
